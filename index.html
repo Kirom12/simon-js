@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SIMON</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>	
+
+	<audio id="sounds-1" preload>
+		<source src="sounds/mp3/sounds_01.mp3" type="audio/mpeg" />
+		<source src="sounds/ogg/sounds_01.ogg" type="audio/ogg" />
+	</audio>
+	<audio id="sounds-2" preload>
+		<source src="sounds/mp3/sounds_02.mp3" type="audio/mpeg" />
+		<source src="sounds/ogg/sounds_02.ogg" type="audio/ogg" />
+	</audio>
+	<audio id="sounds-3" preload>
+		<source src="sounds/mp3/sounds_03.mp3" type="audio/mpeg" />
+		<source src="sounds/ogg/sounds_03.ogg" type="audio/ogg" />
+	</audio>
+	<audio id="sounds-4" preload>
+		<source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg" />
+		<source src="sounds/ogg/sounds_04.ogg" type="audio/ogg" />
+	</audio>
+
+	<div id="simon">
+
+		<div class="screen" id="home">
+			<div class="tb">
+				<div class='tb-cell'>
+					<h1>Simon</h1>
+					<p>Refaire la séquence des quatres couleurs</p>
+					<div id="play">Jouer</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="screen" id="game">
+			<div id="colors">
+				<div class="color" id="color-green"></div>
+				<div class="color" id="color-red"></div>
+				<div class="color" id="color-yellow"></div>
+				<div class="color" id="color-blue"></div>
+			</div>
+			<div class="footer tb">
+				<div class='tb-cell'>	
+					<div>Niveau : <span id="current-level">1</span></div>
+					<div>Vies : <span id="lifes">3</span></div>
+				</div>
+				<button id="add-to-sequence" class="hide">Add</button>
+			</div>
+		</div>
+
+		<div class="screen active" id="result">
+			<div class="tb">
+				<div class='tb-cell'>		
+					<h2>Le jeu est terminé</h2>
+					<p>Vous avez atteint le niveau </p>
+					<div id="final-level">3</div>
+					<div id="replay">Rejouer</div>
+					<div class="score">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<script type="text/javascript" src="Score.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

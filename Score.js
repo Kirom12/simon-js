@@ -25,8 +25,6 @@ var Score = function() {
 
 			scores = this.sortingScore(scores);
 
-			console.log(scores);
-
 			let html = `
 				<table>
 					<tr>
@@ -43,7 +41,6 @@ var Score = function() {
 
 			tableElement.innerHTML = html;
 		}
-
 	}
 
 	this.saveScore = function() {

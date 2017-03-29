@@ -1,6 +1,5 @@
 
 var Game = function() {
-	this.screenDiv = document.querySelector(".screen");
 	this.homeDiv = document.querySelector("#home");
 	this.gameDiv = document.querySelector("#game");
 	this.resultDiv = document.querySelector("#result");
@@ -85,7 +84,7 @@ var Game = function() {
 
 			setTimeout(function() {
 				divElement.classList.remove("active");
-			}, 500)
+			}, 500);
 
 			console.log("ok click");
 
@@ -131,11 +130,11 @@ var Game = function() {
 	 *	@param int current animated square
 	 */
 	this.playSequence = function(index) {
-		let divElement, className;
+		let divElement, idName;
 		var _this = this;
 
-		className = this.getClassColor(this.colorSequence[index]);
-		divElement = document.querySelector("#"+className);
+		idName = this.getClassColor(this.colorSequence[index]);
+		divElement = document.querySelector("#"+idName);
 
 		console.log("blink");
 

@@ -27,7 +27,7 @@
 
 	<div id="simon">
 
-		<div class="screen" id="home">
+		<div class="screen active" id="home">
 			<div class="tb">
 				<div class='tb-cell'>
 					<h1>Simon</h1>
@@ -53,16 +53,22 @@
 			</div>
 		</div>
 
-		<div class="screen active" id="result">
+		<div class="screen" id="result">
 			<div class="tb">
 				<div class='tb-cell'>		
 					<h2>Le jeu est terminé</h2>
 					<p>Vous avez atteint le niveau </p>
 					<div id="final-level">3</div>
 					<div id="replay">Rejouer</div>
-					<div class="score">
+					<div id="score" class="score">
+						<p>Entrez votre prénom :</p>
+						<input id="name-input" type="text">
+						<button id="save-score">Sauver</button>
 						
 					</div>
+					
+						<h3>Tableau des scores :</h3>
+						<div id="score-table"></div>
 				</div>
 			</div>
 		</div>

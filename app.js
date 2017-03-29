@@ -30,7 +30,6 @@ var Game = function() {
 		});
 
 		this.addToSequence();
-		this.score.test();
 	}
 
 	/*
@@ -40,6 +39,9 @@ var Game = function() {
 	this.stopGame = function() {
 		this.gameDiv.setAttribute("class", "screen");
 		this.resultDiv.setAttribute("class", "screen active");
+
+		//Call score main function to initialize scoreboard
+		this.score.main(this.currentLevel);
 	}
 
 	/*
